@@ -1,8 +1,9 @@
-## Sapienz Prototype (Out-of-date)
+## Sapienz
 Sapienz: Multi-objective Automated Testing for Android Applications  
 
-This is a prototype of the Sapienz approach for multi-objective automated testing for Android applications.
-Please note that this repository is no longer maintained.
+<img src="http://www.sapienz.tk/content/images/2015/12/sapienz_screenshot.jpg" width="450px">
+
+This is a research prototype of the Sapienz approach for multi-objective automated testing for Android applications.  
 
 Publication:
 ```
@@ -15,9 +16,10 @@ Publication:
 } 
 ```
 
+
 ## Installation
 
-Simply download the artefact [here](https://github.com/Rhapsod/sapienz/archive/d0f06c30800332bbafa7cf0ed32379fe1abcad5d.zip) and apply the following environment configuration: 
+Simply clone the source code from this repository and apply the following environment configuration: 
 
 ### Environment Configration
 * Python: 2.7
@@ -47,7 +49,7 @@ or you can specify source\_folder\_path for the subject app with source code
 * closed-source/non-instrumented apk name should end with ".apk" 
 
 ### Settings
-* ANDROID\_HOME and WORKING\_DIR in settings.py should be set before starting Sapeinz.
+* ANDROID\_HOME and WORKING\_DIR in [settings.py](https://github.com/Rhapsod/sapienz/blob/master/settings.py) should be set before starting Sapeinz.
 
 ### Output
 * for open-sourced apps, outputs are stored under the given source folder
@@ -68,7 +70,12 @@ Output content:
 * This implementation has been tested with Android 4.4, running on Ubuntu 14.04 and Mac OS 10.10
 * If measure statement coverage for open-sourced apps, the subjects need to be processed to support EMMA instrumentation:
 (Please refer to Dynodroid https://code.google.com/archive/p/dyno-droid/)
-* This version is only for emulators running on a physical PC. 
+* This version is ready for emulators. 
+It also supports real devices, you may need to adapt related code for your specific devices.
+
+
+## License
+[BSD License] (https://github.com/Rhapsod/sapienz/blob/master/LICENSE)
 
 
 ## Contact
