@@ -272,13 +272,14 @@ def main(instrumented_app_dir):
 	# for css subjects
 	if instrumented_app_dir.endswith(".apk"):
 		instrumented_app_dir += "_output"
+		os.system("rm -rf " + instrumented_app_dir)
 		os.system("mkdir " + instrumented_app_dir)
-
 	print "### Working on apk:", package_name
 
 	# get emulator device
 	print "Preparing devices ..."
-	emulator.boot_devices()
+	# emulator.create_avd()
+	# emulator.boot_devices()
 	emulator.prepare_motifcore()
 	emulator.clean_sdcard()
 

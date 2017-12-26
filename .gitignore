@@ -1,3 +1,7 @@
+# Project output results
+*_output/
+*.apk
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]

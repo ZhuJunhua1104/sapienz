@@ -65,6 +65,17 @@ def get_devices():
 	return ret
 
 
+def create_avd():
+	"""
+        Create avd with API 19 and settings.AVD.SERIES name
+        :return:
+        """
+        device_name = settings.AVD_SERIES
+        sub.Popen('echo no | android create avd -f -n ' + device_name + '-t android-19 --abi default/armeabi-v7a --sdcard 1024M',
+                  stdout=sub.PIPE, stderr=sub.PIPE, shell=True)
+
+
+        
 def boot_devices():
 	"""
 	prepare the env of the device
